@@ -74,7 +74,6 @@ public class List implements ListInterface {
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
 		return size == 0;
 	}
 
