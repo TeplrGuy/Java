@@ -70,7 +70,6 @@ public class List implements ListInterface {
 		} else {
 			return head.item.toString();
 		}
-
 	}
 
 	@Override
