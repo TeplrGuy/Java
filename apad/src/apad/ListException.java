@@ -9,8 +9,5 @@ public class ListException extends Exception {
 		// TODO Auto-generated constructor stub
 		System.out.println("ListException: " + string);
 	}
-	
-	
-	
 
 }

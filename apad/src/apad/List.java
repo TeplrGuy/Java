@@ -1,13 +1,12 @@
 package apad;
 
-
 /**
  * @author Gil
  *
  */
 public class List implements ListInterface {
 
-	private int size=0;
+	private int size = 0;
 	LinkedNode head;
 	LinkedNode tail;
 
@@ -39,18 +38,19 @@ public class List implements ListInterface {
 		}
 		tail = node;
 		size++;
-		
 	}
 
 	@Override
 	public void dequeue() throws ListException {
 		// TODO Auto-generated method stub
-		if(isEmpty()){
+		if (isEmpty()) {
 			throw new ListException(" List is empty");
 		}
-		head.next = head.prev;
+
+		head = head.next;
 		size--;
 	}
+
 	public void deueueAll() throws ListException {
 		// TODO Auto-generated method stub
 		if (head == null) {
@@ -62,7 +62,6 @@ public class List implements ListInterface {
 		size = 0;
 	}
 
-	
 	@Override
 	public Object peek() throws ListException {
 		// TODO Auto-generated method stub
@@ -74,19 +73,10 @@ public class List implements ListInterface {
 
 	}
 
-
 	@Override
 	public boolean isEmpty() {
 		// TODO Auto-generated method stub
-		
-			return size == 0;
-	}
-	@Override
-	public void combine(Object newItem) {
-		// TODO Auto-generated method stub
-		newItem.toString().length();
-		
-		System.out.println(newItem);
+		return size == 0;
 	}
 
 	@Override
@@ -94,7 +84,7 @@ public class List implements ListInterface {
 		// TODO Auto-generated method stub
 		return size;
 	}
-	
+
 	public String toString() {
 		String items = "";
 		LinkedNode curr = head;
@@ -107,6 +97,4 @@ public class List implements ListInterface {
 		}
 		return items;
 	}
-
-
 }
