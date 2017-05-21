@@ -80,7 +80,7 @@ public class List implements ListInterface {
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub.
 		return size;
 	}
 
