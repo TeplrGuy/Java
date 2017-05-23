@@ -4,11 +4,12 @@ package apad;
  * @author Gil
  *
  */
-public class List implements ListInterface {
+public class List implements ListInterface, MathInterface {
 
 	private int size = 0;
 	LinkedNode head;
 	LinkedNode tail;
+	private int sums[];
 
 	public class LinkedNode {
 		Object item;
@@ -95,4 +96,31 @@ public class List implements ListInterface {
 		}
 		return items;
 	}
+
+	
+	
+
+	/*
+	 * 
+	 * Math Interface begins here!
+	 * 
+	 */
+	
+	@Override
+	public int Fibbinaci(int n) {
+	
+			if (n == 0){
+				return 0;
+			}
+			 if (n== 1 || n == 2){
+				return 1;
+			 }
+			
+			 
+			// TODO Auto-generated method stub
+			return Fibbinaci(n -1) +Fibbinaci(n -2) ;
+		
+	
+	}
+	
 }

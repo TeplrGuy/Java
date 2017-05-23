@@ -7,7 +7,7 @@ package apad;
  * @author Gil
  *
  */
-public class CombineTwoList {
+public class ListTester {
 
 	/**
 	 * A class to test our ADT design
@@ -16,6 +16,7 @@ public class CombineTwoList {
 	static List numbers = new List();
 	static List alpha = new List();
 	static List results = new List();
+	static List fibbinaci = new List();
 	/**
 	 * @param args
 	 * @throws ListException
@@ -41,5 +42,13 @@ public class CombineTwoList {
 			alpha.dequeue();
 		}
 		System.out.println(results);
+		System.out.print("\n");
+		System.out.println("Fibbinaci numbers");
+		for (int i = 0; i < 20; i++) {
+			System.out.println((fibbinaci.Fibbinaci(i)));
+		}
+		
+		
+	
 	}
 }

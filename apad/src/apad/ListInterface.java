@@ -18,4 +18,5 @@ public interface ListInterface {
 	public void deueueAll() throws ListException;
 	public String toString();
 	
+	
 }
